@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .container {
@@ -82,7 +82,7 @@ body {
     background-color: #1c2541;
 }
 
-/* 4. Main Layout (2 Columns) */
+/* 4. Main Layout (2 Στήλες) */
 .main-layout {
     display: flex;
     gap: 30px;
@@ -99,88 +99,60 @@ body {
     background: #ffffff;
     padding: 20px;
     border: 1px solid #e9ecef;
-    border-radius: 4px;
-
-    /* Ήταν align-self: flex-start, τώρα εξασφαλίζουμε σωστή ευθυγράμμιση */
+    border-radius: 6px;
     align-self: flex-start;
 }
 
-/* Hero Card / Picture */
-.hero-card {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-    height: 400px;
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
-    color: white;
-    padding: 25px 20px;
-}
-
-.badge {
-    background-color: #d90429;
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 2px;
-}
-
-.hero-overlay h2 {
-    font-size: 1.5rem;
-    margin-top: 8px;
-}
-
-.hero-meta {
-    font-size: 13px;
-    color: #ffc107;
-    margin-top: 5px;
-}
-
-/* Sidebar News */
-.sidebar-header {
-    border-bottom: 2px solid #0b132b;
+.card h2 {
+    color: #0b132b;
+    border-bottom: 2px solid #e2e8f0;
     padding-bottom: 8px;
     margin-bottom: 15px;
 }
 
-.sidebar-header h3 {
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 6px 0;
+}
+
+.rating {
     font-size: 1.1rem;
-    color: #0b132b;
+    color: #d97706;
+    margin-top: 10px;
 }
 
-.news-item {
-    border-bottom: 1px solid #e9ecef;
-    padding: 12px 0;
+/* Map Container */
+.map-container {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-item h4 {
-    font-size: 0.95rem;
-    color: #1c2541;
-    line-height: 1.3;
-}
-
-.news-date {
-    font-size: 12px;
-    color: #8d99ae;
+.btn {
     display: block;
-    margin-top: 4px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
 }
 
 /* Responsive για κινητά */
