@@ -8,47 +8,85 @@
 </head>
 <body>
 
-    <header>
-        <h1>Καραταράκης Μάρμαρα</h1>
-        <p>Επεξεργασία & Εμπορία Μαρμάρων | Γόρτυνα</p>
-        
-        <nav>
-            <ul>
-                <li><a href="#about">Σχετικά με Εμάς</a></li>
-                <li><a href="#hours">Ωράριο</a></li>
-                <li><a href="#contact">Επικοινωνία</a></li>
-            </ul>
-        </nav>
+    <!-- 1. Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span class="date">16 Οκτωβρίου 2026</span>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Καραταράκης Μάρμαρα</h1>
+            <p>Επεξεργασία & Εμπορία Μαρμάρων | Γόρτυνα</p>
+        </div>
     </header>
 
-    <main>
-        <section id="about" class="card">
-            <h2>Σχετικά με Εμάς</h2>
-            <p>Στην επιχείρηση <strong>Καραταράκης Μάρμαρα</strong> προσφέρουμε υψηλής ποιότητας κατασκευές και επεξεργασία μαρμάρων για κάθε ανάγκη. Μας διακρίνει η συνέπεια, η ποιότητα των υλικών και η εξαιρετική εξυπηρέτηση.</p>
-            <p class="rating">⭐ Αξιολόγηση: <strong>4.8 / 5</strong> στο Google Maps</p>
-        </section>
-
-        <section id="hours" class="card">
-            <h2>Ωράριο Λειτουργίας</h2>
+    <!-- 3. Navigation Bar -->
+    <nav class="main-nav">
+        <div class="container nav-content">
             <ul>
-                <li><strong>Δευτέρα – Παρασκευή:</strong> 09:00 – 16:00</li>
-                <li><strong>Σάββατο:</strong> 09:00 – 15:00</li>
-                <li><strong>Κυριακή:</strong> Κλειστά</li>
+                <li><a href="#home">ΑΡΧΙΚΗ</a></li>
+                <li><a href="#about">ΤΟ ΜΑΡΜΑΡΑΔΙΚΟ</a></li>
+                <li><a href="#products">ΠΡΟΪΟΝΤΑ & ΥΠΗΡΕΣΙΕΣ</a></li>
+                <li><a href="#hours">ΩΡΑΡΙΟ</a></li>
+                <li><a href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <!-- 4. Main Content (Grid 2 Στηλών) -->
+    <div class="container main-layout">
+        
+        <!-- Αριστερή Στήλη: Hero Featured Section -->
+        <section class="hero-section">
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200" alt="Μάρμαρα Καραταράκης" class="hero-img">
+                <div class="hero-overlay">
+                    <span class="badge">ΠΡΟΤΕΙΝΟΜΕΝΑ</span>
+                    <h2>Καραταράκης Μάρμαρα: Υψηλή Ποιότητα & Τεχνογνωσία στη Γόρτυνα</h2>
+                    <p class="hero-meta">⭐ Αξιολόγηση 4.8/5 στο Google Maps</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="card">
-            <h2>Επικοινωνία & Τοποθεσία</h2>
-            <p><strong>Τηλέφωνο:</strong> <a href="tel:6989162624">698 916 2624</a></p>
-            <p><strong>Διεύθυνση:</strong> Επαρ.Οδ. Αγίων Δέκα - Πραιτωρίων, Γόρτυνα 700 16</p>
-            <p>♿ <strong>Προσβασιμότητα:</strong> Προσβάσιμη είσοδος & χώρος στάθμευσης για αμαξίδια</p>
-            <br>
-            <a href="https://maps.app.goo.gl/4LNPWosZKbfXSz61A" target="_blank" class="btn">Δείτε μας στο Google Maps 🗺️</a>
-        </section>
-    </main>
+        <!-- Δεξιά Στήλη: Σημαντικές Ανακοινώσεις / Νέα -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Σημαντικές Ανακοινώσεις</h3>
+            </div>
+            
+            <div class="news-list">
+                <article class="news-item">
+                    <h4>Επεξεργασία & Κοπή Μαρμάρων Υψηλής Ακριβείας</h4>
+                    <span class="news-date">Διαθέσιμη Υπηρεσία</span>
+                </article>
 
+                <article class="news-item">
+                    <h4>Προσβάσιμη Είσοδος & Χώρος Στάθμευσης για Αμαξίδια</h4>
+                    <span class="news-date">Διευκολύνσεις</span>
+                </article>
+
+                <article class="news-item">
+                    <h4>Τηλέφωνο Άμεσης Επικοινωνίας & Παραγγελιών</h4>
+                    <p>Καλέστε μας στο <strong>698 916 2624</strong> για προσφορά.</p>
+                </article>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Καραταράκης Μάρμαρα - Με την επιφύλαξη παντός δικαιώματος</p>
+        <div class="container">
+            <p>&copy; 2026 Καραταράκης Μάρμαρα - Επαρ.Οδ. Αγίων Δέκα - Πραιτωρίων, Γόρτυνα 700 16</p>
+        </div>
     </footer>
 
 </body>
